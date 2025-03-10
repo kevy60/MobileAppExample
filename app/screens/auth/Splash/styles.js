@@ -5,6 +5,9 @@ export const styles = StyleSheet.create({
     width: '100%',
     height: 200,
   },
+  titleContainer: {
+    marginVertical: 54,
+  },
   title: {
     fontSize: 40,
     fontWeight: "bold",
@@ -16,6 +19,18 @@ export const styles = StyleSheet.create({
     textAlign: "center"
   },
   container: {
-    padding: 20,
+    padding: 24,
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100%",
+    borderWidth: 1,
+  },
+  signin: {
+    textAlign: "center",
+    fontSize: 16,
+    color: "#4F63AC",
+    marginTop: 30,
+    fontWeight: 700
   }
 })

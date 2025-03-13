@@ -4,22 +4,15 @@ import AuthHeader from "../../../components/AuthHeader";
 import Input from "../../../components/Input";
 import { styles } from "./styles";
 import Button from "../../../components/Button/index"
-import Checkbox from "../../../components/Checkbox";
 import Separator from "../../../components/Separator";
 import GoogleLogin from "../../../components/GoogleLogin";
 
-const SignUp = () => {
-    const [checked, setChecked] = useState(false);
+const SignIn = () => {
     return (
         <View style={styles.container}>
-            <AuthHeader title="Sign Up" />
-            <Input label="Name" placeholder="John Doe"/>
+            <AuthHeader title="Sign In" />
             <Input label="Email" placeholder="JohnDoe@gmail.com"/>
             <Input isPassword label="Password" placeholder="*****"/>
-            <View style={styles.agreeRow}>
-                <Checkbox checked={checked} onCheck={setChecked} />
-                <Text style={styles.agreeText}>I agree with <Text style={styles.agreeTextBold}>Terms</Text> & <Text style={styles.agreeTextBold}>Privacy</Text></Text>
-            </View>
             <Button style={styles.button} title="Sign In" />
             <Separator text="Or sign up with" />
             <GoogleLogin />
@@ -29,4 +22,4 @@ const SignUp = () => {
         </View>
     )
 }
-export default SignUp;
+export default SignIn;

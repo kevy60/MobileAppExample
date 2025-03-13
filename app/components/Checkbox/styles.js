@@ -17,7 +17,9 @@ export const styles = StyleSheet.create({
         alignItems: "center"
     },
     checkIcon: {
-        width: 12,
-        height: 9
+        width: 22,
+        height: 22,
+        borderRadius: 4,
+        borderWidth: 1
     }
 })

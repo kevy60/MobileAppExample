@@ -6,6 +6,8 @@ import { styles } from "./styles";
 import Button from "../../../components/Button/index"
 import Separator from "../../../components/Separator";
 import GoogleLogin from "../../../components/GoogleLogin";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const SignIn = () => {
     return (

@@ -3,7 +3,7 @@ import React from "react";
 import { styles } from "./styles";
 import Button from "../../../components/Button";
 
-const SplashScreen = () => {
+const SplashScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Image resizeMode="contain" style={styles.image} source={require('../../../../assets/images/splash_image.png')} />
@@ -14,8 +14,8 @@ const SplashScreen = () => {
         <Text style={styles.title}>Here!</Text>
       </View>
 
-      <Button title="Sign Up" />
-      <Pressable onPress={() => console.log("Sign In")}>
+      <Button title="Sign Up" onPress={() => navigation.navigate("SignUp")} />
+      <Pressable onPress={() => navigation.navigate("SignIn")}>
         <Text style={styles.signin}>Sign In</Text>
       </Pressable>
     </View>

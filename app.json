@@ -8,7 +8,7 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "entryPoint": "./app/index.js",
+    "entryPoint": "./index.js",
     "ios": {
       "supportsTablet": true
     },

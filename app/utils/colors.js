@@ -6,3 +6,4 @@ export const colors = {
     lightGray: '#DADADA',
     darkGray: '#3F4A59',
 }
+

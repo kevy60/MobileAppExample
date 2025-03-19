@@ -42,6 +42,7 @@ const Tabs = () => {
         headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: {borderTopColor: colors.lightGray}
+        
       })}
     >
       <Tab.Screen name="Home" component={Home} />
